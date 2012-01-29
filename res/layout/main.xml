@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp_text"
+        android:textSize="24sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="24sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/lblLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/light_text"
+        android:textSize="24sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvLight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="24sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <SeekBar
+        android:id="@+id/sbLight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="1024"
+        android:progress="0"
+        android:visibility="visible" >
+    </SeekBar>
+
+</LinearLayout>

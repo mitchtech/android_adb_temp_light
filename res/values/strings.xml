@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ADB Temp Light</string>
+    <string name="temp_text">Temperature:</string>
+    <string name="light_text">Ambient Light Level:</string>
+
+</resources>
