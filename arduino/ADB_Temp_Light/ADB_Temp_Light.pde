@@ -34,7 +34,7 @@ void loop()
   //Check if sensor should be sampled.
   if ((millis() - lastTime) > 20)
   {
-    uint16_t data[1];
+    uint16_t data[2];
     // light sensor
     data[0] = analogRead(A0);
     float celsius = getVoltage(1);  //getting the voltage reading from the temp sensor
@@ -44,7 +44,7 @@ void loop()
     data[1] = (int) fahrenheit;
 
     //Send the sensor value to Android as 4 bytes of data.
-    connection->write(4,(uint8_t*)&data);
+    connection->write(sizeof(data),(uint8_t*)&data);
 
     // Output debugging to serial
     Serial.println(data[0],DEC);
